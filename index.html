@@ -165,7 +165,7 @@
         <div class="form-group"><label>Fecha</label><input type="date" id="f1"></div>
         <div class="form-group"><label>Descripción</label><input type="text" id="f2"></div>
         <div class="form-group"><label>Tipo</label><select id="f3"><option value="">Seleccionar</option><option value="Ingreso">Ingreso</option><option value="Egreso">Egreso</option></select></div>
-        <div class="form-group"><label>Categoría</label><select id="f4"><option value="">Seleccionar</option><option value="G001">Pagos Proveedores</option><option value="G002">Nómina</option><option value="G003">Renta</option><option value="G004">Servicios</option><option value="G005">Impuestos</option><option value="G006">Gastos Op</option><option value="I001">Ventas</option><option value="I002">Servicios</option><option value="I003">Otros Ingresos</option></select></div>
+        <div class="form-group"><label>Categoría</label><select id="f4"><option value="">Seleccionar</option><option value="G001">Pagos Proveedores</option><option value="G002">Nómina</option><option value="G003">Renta</option><option value="G004">Servicios</option><option value="G005">Impuestos</option><option value="G006">Gastos Op</option><option value="I001">Ventas</option><option value="I002">Servicios</option><option value="I003">Otros Ingresos</option><option value="I004">Ventas de Hombre</option><option value="I005">Ventas de Lima Dama</option><option value="I006">Ventas de Progreso</option></select></div>
         <div class="form-group"><label>Monto</label><input type="number" id="f5" min="0" step="0.01"></div>
       </div>
       <div class="button-group">
@@ -203,7 +203,7 @@
     let db = null;
     let userId = 'usuario_default';
  
-    const cats = { 'G001': 'Pagos Prov', 'G002': 'Nómina', 'G003': 'Renta', 'G004': 'Servicios', 'G005': 'Impuestos', 'G006': 'Gastos Op', 'I001': 'Ventas', 'I002': 'Servicios', 'I003': 'Otros Ing' };
+    const cats = { 'G001': 'Pagos Prov', 'G002': 'Nómina', 'G003': 'Renta', 'G004': 'Servicios', 'G005': 'Impuestos', 'G006': 'Gastos Op', 'I001': 'Ventas', 'I002': 'Servicios', 'I003': 'Otros Ing','I004': 'Ventas Hombre','I005': 'Ventas Lima Dama','I006': 'Ventas Progreso' };
  
     async function inicializarFirebase() {
       if (!window.firebaseReady) {
